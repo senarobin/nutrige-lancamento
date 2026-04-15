@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nutrigê | Sua saúde virou um jogo</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800;900&display=swap" rel="stylesheet">
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        fontFamily: { sans: ['Nunito', 'sans-serif'], },
+                        colors: { brand: { 50: '#ecfdf5', 100: '#d1fae5', 500: '#10b981', 600: '#059669', }, }
+                    }
+                }
+            }
+        </script>
+        <style>
+            body {
+                background-color: #f8fafc;
+                color: #334155;
+            }
+
+            /* Oculta a barra de rolagem para um visual mais limpo nas imagens */
+            .no-scrollbar::-webkit-scrollbar {
+                display: none;
+            }
+
+            .no-scrollbar {
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+            }
+        </style>
+    </head>
+
+    <body class="antialiased selection:bg-brand-500 selection:text-white">
+
+        <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
+            <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+                <div class="text-3xl font-black tracking-tight text-gray-900">
+                    Nutri<span class="text-brand-500">gê</span>
+                </div>
+                <a href="#cadastro" class="bg-brand-500 hover:bg-brand-600 text-white font-bold py-2.5 px-6 rounded-full transition-all transform hover:scale-105 shadow-lg shadow-brand-500/30">
+                    Entrar na Fila VIP
+                </a>
+            </div>
+        </nav>
+
+        <section class="pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden">
+            <div class="container mx-auto px-6 flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+
+                <div class="lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-50 text-brand-600 font-bold text-sm mb-6 border border-brand-100">
+                        🎉 Lançamento em breve
+                    </div>
+                    <h1 class="text-5xl lg:text-6xl font-black text-gray-900 leading-tight mb-6">
+                        A primeira dieta que você <br class="hidden lg:block">
+                        <span class="text-brand-500">vai querer seguir.</span>
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-8 max-w-lg">
+                        Esqueça as planilhas chatas. No Nutrigê, cuidar da sua saúde é um jogo. Cumpra missões, suba de nível e troque suas conquistas por descontos reais.
+                    </p>
+
+                    <form class="w-full max-w-md flex flex-col sm:flex-row gap-3">
+                        <input type="email" placeholder="Digite seu melhor e-mail" required class="flex-1 px-6 py-4 rounded-full border-2 border-gray-200 focus:outline-none focus:border-brand-500 text-lg transition-colors">
+                        <button type="submit" class="bg-gray-900 hover:bg-gray-800 text-white font-bold py-4 px-8 rounded-full transition-all text-lg shadow-xl whitespace-nowrap">
+                            Quero Participar
+                        </button>
+                    </form>
+                    <p class="text-sm text-gray-500 mt-4 font-medium">✨ Inscreva-se agora e ganhe 500 BioCoins no lançamento!</p>
+                </div>
+
+                <div class="lg:w-1/2 flex justify-center relative">
+                    <div class="absolute w-96 h-96 bg-brand-500/10 rounded-full blur-3xl -z-10"></div>
+
+                    <div class="relative w-[280px] lg:w-[320px] transform lg:rotate-[-2deg]">
+                        <img src="tela1.png" alt="Aplicativo Nutrigê" class="w-full rounded-[2.5rem] shadow-2xl object-cover">
+
+                        <div class="absolute -bottom-6 -left-10 bg-white p-4 rounded-2xl shadow-xl flex items-center gap-4 animate-bounce" style="animation-duration: 3s;">
+                            <div class="text-3xl">🔥</div>
+                            <div>
+                                <p class="text-xs text-gray-500 font-bold uppercase">Sua Sequência</p>
+                                <p class="font-black text-gray-900">12 dias seguidos!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h2 class="text-4xl font-black text-gray-900 mb-4">Como o Nutrigê funciona?</h2>
+                    <p class="text-xl text-gray-600">Nós juntamos a ciência da nutrição com a diversão dos videogames para criar um hábito que dura para sempre.</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+
+                    <div class="flex flex-col items-center text-center">
+                        <div class="w-64 mb-8">
+                            <img src="tela3.png" alt="Escolha seu objetivo" class="w-full rounded-[2.5rem] shadow-xl hover:-translate-y-2 transition-transform duration-300">
+                        </div>
+                        <div class="w-12 h-12 bg-brand-100 text-brand-600 rounded-full flex items-center justify-center text-xl font-black mb-4">1</div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Escolha sua Meta</h3>
+                        <p class="text-gray-600">Quer perder peso, ganhar massa ou melhorar a saúde mental? O app se adapta ao seu corpo.</p>
+                    </div>
+
+                    <div class="flex flex-col items-center text-center">
+                        <div class="w-64 mb-8">
+                            <img src="tela2.png" alt="Chat com a IA" class="w-full rounded-[2.5rem] shadow-xl hover:-translate-y-2 transition-transform duration-300">
+                        </div>
+                        <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-xl font-black mb-4">2</div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Converse com a IA</h3>
+                        <p class="text-gray-600">Dúvidas no mercado? Fome na madrugada? A Dra. Nuti é sua nutricionista de bolso, disponível 24h.</p>
+                    </div>
+
+                    <div class="flex flex-col items-center text-center">
+                        <div class="w-64 mb-8">
+                            <img src="tela4.png" alt="Acompanhe o Progresso" class="w-full rounded-[2.5rem] shadow-xl hover:-translate-y-2 transition-transform duration-300">
+                        </div>
+                        <div class="w-12 h-12 bg-yellow-100 text-yellow-600 rounded-full flex items-center justify-center text-xl font-black mb-4">3</div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Evolua e Ganhe</h3>
+                        <p class="text-gray-600">Bata suas metas de água e refeições, ganhe XP e acompanhe seu progresso de forma visual e clara.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24 bg-brand-50 relative overflow-hidden">
+            <div class="absolute top-0 right-0 -mr-20 -mt-20 text-9xl opacity-10">🪙</div>
+            <div class="absolute bottom-0 left-0 -ml-10 -mb-10 text-9xl opacity-10">🛍️</div>
+
+            <div class="container mx-auto px-6 relative z-10 flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80&w=800" alt="Produtos Orgânicos" class="rounded-3xl shadow-2xl object-cover h-96 w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <span class="text-brand-600 font-bold uppercase tracking-wider text-sm mb-2 block">Seu suor vale dinheiro</span>
+                    <h2 class="text-4xl md:text-5xl font-black text-gray-900 mb-6">Troque bons hábitos por descontos reais.</h2>
+                    <p class="text-xl text-gray-600 mb-8">
+                        Completou suas missões do dia? Você ganha <strong>BioCoins</strong>. Use nossa moeda virtual na loja dentro do app para ganhar descontos exclusivos em suplementos, comidas saudáveis e lojas parceiras.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-3 text-lg text-gray-700 font-medium"><span class="bg-brand-100 text-brand-600 p-1 rounded-full">✓</span> Produtos orgânicos</li>
+                        <li class="flex items-center gap-3 text-lg text-gray-700 font-medium"><span class="bg-brand-100 text-brand-600 p-1 rounded-full">✓</span> Suplementação esportiva</li>
+                        <li class="flex items-center gap-3 text-lg text-gray-700 font-medium"><span class="bg-brand-100 text-brand-600 p-1 rounded-full">✓</span> Roupas e acessórios de treino</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6 text-center max-w-4xl">
+                <h2 class="text-4xl font-black text-gray-900 mb-6">Você não está sozinho nessa</h2>
+                <p class="text-xl text-gray-600 mb-12">Participe de Clãs, poste suas refeições e entre em batalhas amigáveis com seus amigos para ver quem mantém o foco por mais tempo.</p>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                    <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100">
+                        <div class="text-4xl mb-4">🛡️</div>
+                        <h3 class="font-bold text-lg text-gray-900">Batalhas de Clãs</h3>
+                        <p class="text-gray-500 mt-2 text-sm">Junte-se ao "Clã da Hidratação" e vença desafios em grupo.</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100">
+                        <div class="text-4xl mb-4">👑</div>
+                        <h3 class="font-bold text-lg text-gray-900">Auras de Perfil</h3>
+                        <p class="text-gray-500 mt-2 text-sm">Desbloqueie molduras raras para sua foto de perfil ao subir de nível.</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100">
+                        <div class="text-4xl mb-4">📸</div>
+                        <h3 class="font-bold text-lg text-gray-900">Feed Exclusivo</h3>
+                        <p class="text-gray-500 mt-2 text-sm">Compartilhe suas conquistas em uma rede social livre de julgamentos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cadastro" class="py-24 bg-gray-900 text-white text-center">
+            <div class="container mx-auto px-6 max-w-2xl">
+                <h2 class="text-4xl lg:text-5xl font-black mb-6">Preparado para dar o play na sua saúde?</h2>
+                <p class="text-xl text-gray-400 mb-10">As vagas para o primeiro teste do Nutrigê são limitadas. Cadastre-se hoje e comece sua jornada com vantagem.</p>
+
+                <form class="flex flex-col sm:flex-row gap-3 justify-center">
+                    <input type="email" placeholder="Seu melhor e-mail" required class="w-full sm:w-2/3 px-6 py-5 rounded-full bg-gray-800 border border-gray-700 text-white focus:outline-none focus:border-brand-500 text-lg">
+                    <button type="submit" class="w-full sm:w-auto bg-brand-500 hover:bg-brand-400 text-white font-bold py-5 px-10 rounded-full transition-all text-lg shadow-lg shadow-brand-500/20 whitespace-nowrap">
+                        Garantir Vaga
+                    </button>
+                </form>
+                <p class="text-sm text-gray-500 mt-6 font-medium">Livre de spam. Cancele a inscrição quando quiser.</p>
+            </div>
+        </section>
+
+        <footer class="bg-gray-950 py-8 text-center border-t border-gray-800">
+            <p class="text-gray-500 font-medium">© 2026 Nutrigê. Todos os direitos reservados.</p>
+        </footer>
+
+    </body>
+</html>
